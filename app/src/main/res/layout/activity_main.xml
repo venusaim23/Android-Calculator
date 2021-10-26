@@ -22,7 +22,7 @@
     <TextView
         android:id="@+id/display_tv"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_marginHorizontal="10dp"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="10dp"
@@ -30,7 +30,7 @@
         android:gravity="bottom|end"
         android:padding="10dp"
         android:text="9"
-        android:textSize="26sp"
+        android:textSize="36sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.157"
