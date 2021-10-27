@@ -320,10 +320,9 @@
                 android:layout_weight="25"
                 android:backgroundTint="#00FFFFFF"
                 android:stateListAnimator="@null"
-                android:text="R"
+                android:text="√"
                 android:textSize="36sp"
                 style="?android:attr/buttonBarButtonStyle" />
-
             <Button
                 android:id="@+id/button_0"
                 android:layout_width="wrap_content"
