@@ -311,18 +311,19 @@
             android:paddingVertical="5dp"
             android:weightSum="100">
 
-            <Button
+            <ImageButton
                 android:id="@+id/button_root"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
                 android:layout_gravity="center_vertical"
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
                 android:backgroundTint="#00FFFFFF"
+                android:scaleType="centerCrop"
+                android:src="@drawable/images"
                 android:stateListAnimator="@null"
-                android:text="√"
-                android:textSize="36sp"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:textSize="36sp" />
             <Button
                 android:id="@+id/button_0"
                 android:layout_width="wrap_content"
