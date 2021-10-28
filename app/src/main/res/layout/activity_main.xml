@@ -315,13 +315,13 @@
                 android:id="@+id/button_root"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="36dp"
-                android:layout_height="36dp"
+                android:layout_height="33dp"
                 android:layout_gravity="center_vertical"
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
                 android:backgroundTint="#00FFFFFF"
                 android:scaleType="centerCrop"
-                android:src="@drawable/images"
+                android:src="@drawable/ic_images"
                 android:stateListAnimator="@null"
                 android:textSize="36sp" />
             <Button
