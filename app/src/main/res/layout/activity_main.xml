@@ -26,7 +26,6 @@
         android:layout_marginHorizontal="10dp"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="10dp"
-        android:background="@drawable/display_bg"
         android:gravity="bottom|end"
         android:padding="10dp"
         android:text="9"
