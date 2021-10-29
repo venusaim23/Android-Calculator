@@ -314,16 +314,15 @@
             <ImageButton
                 android:id="@+id/button_root"
                 style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="36dp"
-                android:layout_height="33dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
                 android:backgroundTint="#00FFFFFF"
-                android:scaleType="centerCrop"
-                android:src="@drawable/ic_images"
-                android:stateListAnimator="@null"
-                android:textSize="36sp" />
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_images__1_"
+                android:stateListAnimator="@null"/>
             <Button
                 android:id="@+id/button_0"
                 android:layout_width="wrap_content"
