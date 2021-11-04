@@ -8,8 +8,11 @@
         <entry key="..\:/GitHub/Android-Calculator/app/src/main/res/drawable/display_bg.xml" value="0.2703125" />
         <entry key="..\:/GitHub/Android-Calculator/app/src/main/res/drawable/divider.xml" value="0.2703125" />
         <entry key="..\:/GitHub/Android-Calculator/app/src/main/res/drawable/highlight_buttons.xml" value="0.2552083333333333" />
+        <entry key="..\:/GitHub/Android-Calculator/app/src/main/res/drawable/ic_ac_plain.xml" value="0.2703125" />
         <entry key="..\:/GitHub/Android-Calculator/app/src/main/res/drawable/ic_images__1_.xml" value="0.2703125" />
         <entry key="..\:/GitHub/Android-Calculator/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
+        <entry key="..\:/GitHub/Android-Calculator/app/src/main/res/drawable/ic_root.xml" value="0.2703125" />
+        <entry key="..\:/GitHub/Android-Calculator/app/src/main/res/drawable/ic_zero_plain.xml" value="0.2703125" />
         <entry key="..\:/GitHub/Android-Calculator/app/src/main/res/layout/activity_main.xml" value="0.264" />
       </map>
     </option>

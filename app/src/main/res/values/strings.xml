@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">Calculator</string>
-    <string name="ac">AC</string>
+    <string name="ac_text">All Clear</string>
+    <string name="root_text">Square Root</string>
+    <string name="zero_text">Zero</string>
 </resources>
