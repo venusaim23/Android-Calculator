@@ -43,6 +43,7 @@
         android:layout_height="1dp"
         android:layout_marginHorizontal="10dp"
         android:layout_marginBottom="10dp"
+        android:contentDescription="@string/ac_text"
         app:layout_constraintBottom_toTopOf="@+id/tableLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -65,21 +66,22 @@
             android:paddingVertical="5dp"
             android:weightSum="100">
 
-            <Button
+            <ImageButton
                 android:id="@+id/button_ac"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
                 android:background="@drawable/highlight_buttons"
-                android:stateListAnimator="@null"
-                android:text="@string/ac"
-                android:textSize="16sp"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_ac_plain"
+                android:stateListAnimator="@null" />
 
             <Button
                 android:id="@+id/button_del"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
@@ -88,11 +90,11 @@
                 android:background="@drawable/highlight_buttons"
                 android:stateListAnimator="@null"
                 android:text="del"
-                android:textSize="16sp"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:textSize="16sp" />
 
             <Button
                 android:id="@+id/button_percent"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
@@ -101,11 +103,11 @@
                 android:background="@drawable/highlight_buttons"
                 android:stateListAnimator="@null"
                 android:text="%"
-                android:textSize="22sp"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:textSize="22sp" />
 
             <Button
                 android:id="@+id/button_divide"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
@@ -114,8 +116,7 @@
                 android:background="@drawable/highlight_buttons"
                 android:stateListAnimator="@null"
                 android:text="/"
-                android:textSize="22sp"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:textSize="22sp" />
         </TableRow>
 
         <TableRow
@@ -126,6 +127,7 @@
 
             <Button
                 android:id="@+id/button_7"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
@@ -135,11 +137,11 @@
                 android:stateListAnimator="@null"
                 android:text="7"
                 android:textColor="#010101"
-                android:textSize="36sp"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:textSize="36sp" />
 
             <Button
                 android:id="@+id/button_8"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
@@ -149,11 +151,11 @@
                 android:stateListAnimator="@null"
                 android:text="8"
                 android:textColor="#010101"
-                android:textSize="36sp"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:textSize="36sp" />
 
             <Button
                 android:id="@+id/button_9"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
@@ -163,11 +165,11 @@
                 android:stateListAnimator="@null"
                 android:text="9"
                 android:textColor="#010101"
-                android:textSize="36sp"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:textSize="36sp" />
 
             <Button
                 android:id="@+id/button_multiply"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
@@ -176,8 +178,7 @@
                 android:background="@drawable/highlight_buttons"
                 android:stateListAnimator="@null"
                 android:text="X"
-                android:textSize="22sp"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:textSize="22sp" />
         </TableRow>
 
         <TableRow
@@ -188,6 +189,7 @@
 
             <Button
                 android:id="@+id/button_4"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
@@ -197,11 +199,11 @@
                 android:stateListAnimator="@null"
                 android:text="4"
                 android:textColor="#010101"
-                android:textSize="36sp"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:textSize="36sp" />
 
             <Button
                 android:id="@+id/button_5"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
@@ -211,11 +213,11 @@
                 android:stateListAnimator="@null"
                 android:text="5"
                 android:textColor="#010101"
-                android:textSize="36sp"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:textSize="36sp" />
 
             <Button
                 android:id="@+id/button_6"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
@@ -225,11 +227,11 @@
                 android:stateListAnimator="@null"
                 android:text="6"
                 android:textColor="#010101"
-                android:textSize="36sp"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:textSize="36sp" />
 
             <Button
                 android:id="@+id/button_subtract"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
@@ -238,8 +240,7 @@
                 android:background="@drawable/highlight_buttons"
                 android:stateListAnimator="@null"
                 android:text="-"
-                android:textSize="22sp"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:textSize="22sp" />
         </TableRow>
 
         <TableRow
@@ -250,6 +251,7 @@
 
             <Button
                 android:id="@+id/button_1"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
@@ -259,11 +261,11 @@
                 android:stateListAnimator="@null"
                 android:text="1"
                 android:textColor="#010101"
-                android:textSize="36sp"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:textSize="36sp" />
 
             <Button
                 android:id="@+id/button_2"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
@@ -273,11 +275,11 @@
                 android:stateListAnimator="@null"
                 android:text="2"
                 android:textColor="#010101"
-                android:textSize="36sp"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:textSize="36sp" />
 
             <Button
                 android:id="@+id/button_3"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
@@ -287,11 +289,11 @@
                 android:stateListAnimator="@null"
                 android:text="3"
                 android:textColor="#010101"
-                android:textSize="36sp"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:textSize="36sp" />
 
             <Button
                 android:id="@+id/button_add"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
@@ -300,8 +302,7 @@
                 android:background="@drawable/highlight_buttons"
                 android:stateListAnimator="@null"
                 android:text="+"
-                android:textSize="22sp"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:textSize="22sp" />
         </TableRow>
 
         <TableRow
@@ -319,25 +320,28 @@
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
                 android:backgroundTint="#00FFFFFF"
+                android:contentDescription="@string/root_text"
                 android:scaleType="fitCenter"
-                android:src="@drawable/ic_root"
-                android:stateListAnimator="@null"/>
-            <Button
+                android:src="@drawable/ic_root_plain"
+                android:stateListAnimator="@null" />
+
+            <ImageButton
                 android:id="@+id/button_0"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
                 android:backgroundTint="#00FFFFFF"
-                android:stateListAnimator="@null"
-                android:text="0"
-                android:textColor="#010101"
-                android:textSize="36sp"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:contentDescription="@string/zero_text"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_zero_plain"
+                android:stateListAnimator="@null" />
 
             <Button
                 android:id="@+id/button_dot"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
@@ -347,8 +351,7 @@
                 android:stateListAnimator="@null"
                 android:text="."
                 android:textColor="#010101"
-                android:textSize="36sp"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:textSize="36sp" />
 
             <Button
                 android:id="@+id/button_equal"
