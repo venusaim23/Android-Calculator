@@ -310,19 +310,18 @@
             android:paddingVertical="5dp"
             android:weightSum="100">
 
-            <Button
+            <ImageButton
                 android:id="@+id/button_root"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
                 android:backgroundTint="#00FFFFFF"
-                android:stateListAnimator="@null"
-                android:text="R"
-                android:textSize="36sp"
-                style="?android:attr/buttonBarButtonStyle" />
-
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_images__1_"
+                android:stateListAnimator="@null"/>
             <Button
                 android:id="@+id/button_0"
                 android:layout_width="wrap_content"
