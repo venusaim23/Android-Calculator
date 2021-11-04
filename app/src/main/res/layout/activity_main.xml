@@ -320,7 +320,7 @@
                 android:layout_weight="25"
                 android:backgroundTint="#00FFFFFF"
                 android:scaleType="fitCenter"
-                android:src="@drawable/ic_images__1_"
+                android:src="@drawable/ic_root"
                 android:stateListAnimator="@null"/>
             <Button
                 android:id="@+id/button_0"
