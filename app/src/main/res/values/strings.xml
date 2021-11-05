@@ -2,5 +2,23 @@
     <string name="app_name">Calculator</string>
     <string name="ac_text">All Clear</string>
     <string name="root_text">Square Root</string>
+    <string name="equals_text">Equals</string>
+    <string name="dot_text">Dot/Point</string>
+    <string name="plus_text">Plus</string>
+    <string name="minus_text">Minus</string>
+    <string name="multiplication_text">Multiplication</string>
+    <string name="division_text">Division</string>
+    <string name="percentage_text">Percentage</string>
+    <string name="back_text">Back/Delete</string>
     <string name="zero_text">Zero</string>
+    <string name="one_text">One</string>
+    <string name="two_text">Two</string>
+    <string name="three_text">Three</string>
+    <string name="four_text">Four</string>
+    <string name="five_text">Five</string>
+    <string name="six_text">Six</string>
+    <string name="seven_text">Seven</string>
+    <string name="eight_text">Eight</string>
+    <string name="nine_text">Nine</string>
+
 </resources>

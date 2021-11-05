@@ -74,25 +74,25 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
-                android:background="@drawable/highlight_buttons"
-                android:scaleType="fitCenter"
-                android:src="@drawable/ic_ac_plain"
-                android:stateListAnimator="@null" />
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="@string/ac_text"
+                android:src="@drawable/ic_button_ac"
+                android:stateListAnimator="@null"/>
 
-            <Button
-                android:id="@+id/button_del"
+            <ImageButton
+                android:id="@+id/button_back"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
-                android:background="@drawable/highlight_buttons"
-                android:stateListAnimator="@null"
-                android:text="del"
-                android:textSize="16sp" />
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="@string/back_text"
+                android:src="@drawable/ic_button_back"
+                android:stateListAnimator="@null"/>
 
-            <Button
+            <ImageButton
                 android:id="@+id/button_percent"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
@@ -100,12 +100,12 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
-                android:background="@drawable/highlight_buttons"
-                android:stateListAnimator="@null"
-                android:text="%"
-                android:textSize="22sp" />
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="@string/percentage_text"
+                android:src="@drawable/ic_button_percent"
+                android:stateListAnimator="@null"/>
 
-            <Button
+            <ImageButton
                 android:id="@+id/button_divide"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
@@ -113,10 +113,10 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
-                android:background="@drawable/highlight_buttons"
-                android:stateListAnimator="@null"
-                android:text="/"
-                android:textSize="22sp" />
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="@string/division_text"
+                android:src="@drawable/ic_button_divide"
+                android:stateListAnimator="@null"/>
         </TableRow>
 
         <TableRow
@@ -125,7 +125,7 @@
             android:paddingVertical="5dp"
             android:weightSum="100">
 
-            <Button
+            <ImageButton
                 android:id="@+id/button_7"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
@@ -133,13 +133,12 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
+                android:contentDescription="@string/seven_text"
                 android:backgroundTint="#00FFFFFF"
-                android:stateListAnimator="@null"
-                android:text="7"
-                android:textColor="#010101"
-                android:textSize="36sp" />
+                android:src="@drawable/ic_button_7"
+                android:stateListAnimator="@null"/>
 
-            <Button
+            <ImageButton
                 android:id="@+id/button_8"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
@@ -148,12 +147,11 @@
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
                 android:backgroundTint="#00FFFFFF"
-                android:stateListAnimator="@null"
-                android:text="8"
-                android:textColor="#010101"
-                android:textSize="36sp" />
+                android:contentDescription="@string/eight_text"
+                android:src="@drawable/ic_button_8"
+                android:stateListAnimator="@null"/>
 
-            <Button
+            <ImageButton
                 android:id="@+id/button_9"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
@@ -162,12 +160,11 @@
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
                 android:backgroundTint="#00FFFFFF"
-                android:stateListAnimator="@null"
-                android:text="9"
-                android:textColor="#010101"
-                android:textSize="36sp" />
+                android:contentDescription="@string/nine_text"
+                android:src="@drawable/ic_button_9"
+                android:stateListAnimator="@null"/>
 
-            <Button
+            <ImageButton
                 android:id="@+id/button_multiply"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
@@ -175,10 +172,10 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
-                android:background="@drawable/highlight_buttons"
-                android:stateListAnimator="@null"
-                android:text="X"
-                android:textSize="22sp" />
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="@string/multiplication_text"
+                android:src="@drawable/ic_button_multiply"
+                android:stateListAnimator="@null"/>
         </TableRow>
 
         <TableRow
@@ -187,7 +184,7 @@
             android:paddingVertical="5dp"
             android:weightSum="100">
 
-            <Button
+            <ImageButton
                 android:id="@+id/button_4"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
@@ -196,12 +193,11 @@
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
                 android:backgroundTint="#00FFFFFF"
-                android:stateListAnimator="@null"
-                android:text="4"
-                android:textColor="#010101"
-                android:textSize="36sp" />
+                android:contentDescription="@string/four_text"
+                android:src="@drawable/ic_button_4"
+                android:stateListAnimator="@null"/>
 
-            <Button
+            <ImageButton
                 android:id="@+id/button_5"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
@@ -210,12 +206,11 @@
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
                 android:backgroundTint="#00FFFFFF"
-                android:stateListAnimator="@null"
-                android:text="5"
-                android:textColor="#010101"
-                android:textSize="36sp" />
+                android:contentDescription="@string/five_text"
+                android:src="@drawable/ic_button_5"
+                android:stateListAnimator="@null"/>
 
-            <Button
+            <ImageButton
                 android:id="@+id/button_6"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
@@ -224,23 +219,22 @@
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
                 android:backgroundTint="#00FFFFFF"
-                android:stateListAnimator="@null"
-                android:text="6"
-                android:textColor="#010101"
-                android:textSize="36sp" />
+                android:contentDescription="@string/six_text"
+                android:src="@drawable/ic_button_6"
+                android:stateListAnimator="@null"/>
 
-            <Button
-                android:id="@+id/button_subtract"
+            <ImageButton
+                android:id="@+id/button_minus"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
-                android:background="@drawable/highlight_buttons"
-                android:stateListAnimator="@null"
-                android:text="-"
-                android:textSize="22sp" />
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="@string/minus_text"
+                android:src="@drawable/ic_button_minus"
+                android:stateListAnimator="@null"/>
         </TableRow>
 
         <TableRow
@@ -249,7 +243,7 @@
             android:paddingVertical="5dp"
             android:weightSum="100">
 
-            <Button
+            <ImageButton
                 android:id="@+id/button_1"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
@@ -258,12 +252,11 @@
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
                 android:backgroundTint="#00FFFFFF"
-                android:stateListAnimator="@null"
-                android:text="1"
-                android:textColor="#010101"
-                android:textSize="36sp" />
+                android:contentDescription="@string/one_text"
+                android:src="@drawable/ic_button_1"
+                android:stateListAnimator="@null"/>
 
-            <Button
+            <ImageButton
                 android:id="@+id/button_2"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
@@ -272,12 +265,11 @@
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
                 android:backgroundTint="#00FFFFFF"
-                android:stateListAnimator="@null"
-                android:text="2"
-                android:textColor="#010101"
-                android:textSize="36sp" />
+                android:contentDescription="@string/two_text"
+                android:src="@drawable/ic_button_2"
+                android:stateListAnimator="@null"/>
 
-            <Button
+            <ImageButton
                 android:id="@+id/button_3"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
@@ -286,23 +278,22 @@
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
                 android:backgroundTint="#00FFFFFF"
-                android:stateListAnimator="@null"
-                android:text="3"
-                android:textColor="#010101"
-                android:textSize="36sp" />
+                android:contentDescription="@string/three_text"
+                android:src="@drawable/ic_button_3"
+                android:stateListAnimator="@null"/>
 
-            <Button
-                android:id="@+id/button_add"
+            <ImageButton
+                android:id="@+id/button_plus"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
-                android:background="@drawable/highlight_buttons"
-                android:stateListAnimator="@null"
-                android:text="+"
-                android:textSize="22sp" />
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="@string/plus_text"
+                android:src="@drawable/ic_button_plus"
+                android:stateListAnimator="@null"/>
         </TableRow>
 
         <TableRow
@@ -321,8 +312,7 @@
                 android:layout_weight="25"
                 android:backgroundTint="#00FFFFFF"
                 android:contentDescription="@string/root_text"
-                android:scaleType="fitCenter"
-                android:src="@drawable/ic_root_plain"
+                android:src="@drawable/ic_button_root"
                 android:stateListAnimator="@null" />
 
             <ImageButton
@@ -335,11 +325,10 @@
                 android:layout_weight="25"
                 android:backgroundTint="#00FFFFFF"
                 android:contentDescription="@string/zero_text"
-                android:scaleType="fitCenter"
-                android:src="@drawable/ic_zero_plain"
-                android:stateListAnimator="@null" />
+                android:src="@drawable/ic_button_0"
+                android:stateListAnimator="@null"/>
 
-            <Button
+            <ImageButton
                 android:id="@+id/button_dot"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
@@ -348,22 +337,22 @@
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
                 android:backgroundTint="#00FFFFFF"
-                android:stateListAnimator="@null"
-                android:text="."
-                android:textColor="#010101"
-                android:textSize="36sp" />
+                android:contentDescription="@string/dot_text"
+                android:src="@drawable/ic_button_dot"
+                android:stateListAnimator="@null"/>
 
-            <Button
+            <ImageButton
                 android:id="@+id/button_equal"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
-                android:background="@drawable/highlight_buttons"
-                android:stateListAnimator="@null"
-                android:text="="
-                android:textSize="22sp" />
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="@string/equals_text"
+                android:src="@drawable/ic_button_equal"
+                android:stateListAnimator="@null"/>
         </TableRow>
     </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
