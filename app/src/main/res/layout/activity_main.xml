@@ -74,9 +74,9 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
-                android:backgroundTint="#00FFFFFF"
                 android:contentDescription="@string/ac_text"
                 android:src="@drawable/ic_button_ac"
+                android:scaleType="fitCenter"
                 android:stateListAnimator="@null"/>
 
             <ImageButton
@@ -87,9 +87,9 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
-                android:backgroundTint="#00FFFFFF"
                 android:contentDescription="@string/back_text"
                 android:src="@drawable/ic_button_back"
+                android:scaleType="fitCenter"
                 android:stateListAnimator="@null"/>
 
             <ImageButton
@@ -100,9 +100,9 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
-                android:backgroundTint="#00FFFFFF"
                 android:contentDescription="@string/percentage_text"
                 android:src="@drawable/ic_button_percent"
+                android:scaleType="fitCenter"
                 android:stateListAnimator="@null"/>
 
             <ImageButton
@@ -113,9 +113,9 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
-                android:backgroundTint="#00FFFFFF"
                 android:contentDescription="@string/division_text"
                 android:src="@drawable/ic_button_divide"
+                android:scaleType="fitCenter"
                 android:stateListAnimator="@null"/>
         </TableRow>
 
@@ -134,8 +134,8 @@
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
                 android:contentDescription="@string/seven_text"
-                android:backgroundTint="#00FFFFFF"
                 android:src="@drawable/ic_button_7"
+                android:scaleType="fitCenter"
                 android:stateListAnimator="@null"/>
 
             <ImageButton
@@ -146,9 +146,9 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
-                android:backgroundTint="#00FFFFFF"
                 android:contentDescription="@string/eight_text"
                 android:src="@drawable/ic_button_8"
+                android:scaleType="fitCenter"
                 android:stateListAnimator="@null"/>
 
             <ImageButton
@@ -159,9 +159,9 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
-                android:backgroundTint="#00FFFFFF"
                 android:contentDescription="@string/nine_text"
                 android:src="@drawable/ic_button_9"
+                android:scaleType="fitCenter"
                 android:stateListAnimator="@null"/>
 
             <ImageButton
@@ -172,9 +172,9 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
-                android:backgroundTint="#00FFFFFF"
                 android:contentDescription="@string/multiplication_text"
                 android:src="@drawable/ic_button_multiply"
+                android:scaleType="fitCenter"
                 android:stateListAnimator="@null"/>
         </TableRow>
 
@@ -192,9 +192,9 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
-                android:backgroundTint="#00FFFFFF"
                 android:contentDescription="@string/four_text"
                 android:src="@drawable/ic_button_4"
+                android:scaleType="fitCenter"
                 android:stateListAnimator="@null"/>
 
             <ImageButton
@@ -205,9 +205,9 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
-                android:backgroundTint="#00FFFFFF"
                 android:contentDescription="@string/five_text"
                 android:src="@drawable/ic_button_5"
+                android:scaleType="fitCenter"
                 android:stateListAnimator="@null"/>
 
             <ImageButton
@@ -218,22 +218,22 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
-                android:backgroundTint="#00FFFFFF"
                 android:contentDescription="@string/six_text"
                 android:src="@drawable/ic_button_6"
+                android:scaleType="fitCenter"
                 android:stateListAnimator="@null"/>
 
             <ImageButton
-                android:id="@+id/button_minus"
+                android:id="@+id/button_subtract"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
-                android:backgroundTint="#00FFFFFF"
                 android:contentDescription="@string/minus_text"
                 android:src="@drawable/ic_button_minus"
+                android:scaleType="fitCenter"
                 android:stateListAnimator="@null"/>
         </TableRow>
 
@@ -251,9 +251,9 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
-                android:backgroundTint="#00FFFFFF"
                 android:contentDescription="@string/one_text"
                 android:src="@drawable/ic_button_1"
+                android:scaleType="fitCenter"
                 android:stateListAnimator="@null"/>
 
             <ImageButton
@@ -264,9 +264,9 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
-                android:backgroundTint="#00FFFFFF"
                 android:contentDescription="@string/two_text"
                 android:src="@drawable/ic_button_2"
+                android:scaleType="fitCenter"
                 android:stateListAnimator="@null"/>
 
             <ImageButton
@@ -277,22 +277,22 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
-                android:backgroundTint="#00FFFFFF"
                 android:contentDescription="@string/three_text"
                 android:src="@drawable/ic_button_3"
+                android:scaleType="fitCenter"
                 android:stateListAnimator="@null"/>
 
             <ImageButton
-                android:id="@+id/button_plus"
+                android:id="@+id/button_add"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
-                android:backgroundTint="#00FFFFFF"
                 android:contentDescription="@string/plus_text"
                 android:src="@drawable/ic_button_plus"
+                android:scaleType="fitCenter"
                 android:stateListAnimator="@null"/>
         </TableRow>
 
@@ -310,9 +310,9 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
-                android:backgroundTint="#00FFFFFF"
                 android:contentDescription="@string/root_text"
                 android:src="@drawable/ic_button_root"
+                android:scaleType="fitCenter"
                 android:stateListAnimator="@null" />
 
             <ImageButton
@@ -323,9 +323,9 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
-                android:backgroundTint="#00FFFFFF"
                 android:contentDescription="@string/zero_text"
                 android:src="@drawable/ic_button_0"
+                android:scaleType="fitCenter"
                 android:stateListAnimator="@null"/>
 
             <ImageButton
@@ -336,9 +336,9 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
-                android:backgroundTint="#00FFFFFF"
                 android:contentDescription="@string/dot_text"
                 android:src="@drawable/ic_button_dot"
+                android:scaleType="fitCenter"
                 android:stateListAnimator="@null"/>
 
             <ImageButton
@@ -349,9 +349,9 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="25"
-                android:backgroundTint="#00FFFFFF"
                 android:contentDescription="@string/equals_text"
                 android:src="@drawable/ic_button_equal"
+                android:scaleType="fitCenter"
                 android:stateListAnimator="@null"/>
         </TableRow>
     </TableLayout>
