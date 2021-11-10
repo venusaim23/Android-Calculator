@@ -5,5 +5,5 @@
     android:viewportHeight="40">
   <path
       android:pathData="M25.734,20.789L21,20.789v4.723L19.441,25.512L19.441,20.789L14.719,20.789v-1.57L19.441,19.219L19.441,14.5L21,14.5v4.723h4.734Z"
-      android:fillColor="#3700b3"/>
+      android:fillColor="@color/highlight_button_color"/>
 </vector>
