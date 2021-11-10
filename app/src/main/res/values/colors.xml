@@ -9,5 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="select_gray">#A9A9A9</color>
     <color name="orange">#FF5300</color>
-    <color name="highlight_button_color">#FF3700B3</color>
+<!--    <color name="highlight_button_color">#FF3700B3</color>-->
+    <color name="highlight_button_color">#FFFF5300</color>
 </resources>
