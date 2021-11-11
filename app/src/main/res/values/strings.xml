@@ -20,5 +20,6 @@
     <string name="seven_text">Seven</string>
     <string name="eight_text">Eight</string>
     <string name="nine_text">Nine</string>
+    <string name="default_string_display">0</string>
 
 </resources>
