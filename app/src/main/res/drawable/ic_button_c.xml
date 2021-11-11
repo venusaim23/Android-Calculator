@@ -1,0 +1,4 @@
+<vector android:height="50dp" android:viewportHeight="40"
+    android:viewportWidth="40" android:width="50dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/highlight_button_color" android:pathData="M25.367,27.414A8.214,8.214 0,0 1,21.5 28.234,6.236 6.236,0 0,1 16.715,26.311a7.1,7.1 0,0 1,-1.8 -5.049,7.44 7.44,0 0,1 2.021,-5.43 6.861,6.861 0,0 1,5.127 -2.07,8.22 8.22,0 0,1 3.3,0.576v1.748a6.694,6.694 0,0 0,-3.32 -0.84,5.1 5.1,0 0,0 -3.911,1.611 6.07,6.07 0,0 0,-1.5 4.307,5.776 5.776,0 0,0 1.4,4.077A4.768,4.768 0,0 0,21.715 26.76a6.9,6.9 0,0 0,3.652 -0.937Z"/>
+</vector>
