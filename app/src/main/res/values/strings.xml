@@ -10,16 +10,14 @@
     <string name="division_text">Divide</string>
     <string name="percentage_text">Percentage</string>
     <string name="back_text">Back/Delete</string>
-    <string name="zero_text">Zero</string>
-    <string name="one_text">One</string>
-    <string name="two_text">Two</string>
-    <string name="three_text">Three</string>
-    <string name="four_text">Four</string>
-    <string name="five_text">Five</string>
-    <string name="six_text">Six</string>
-    <string name="seven_text">Seven</string>
-    <string name="eight_text">Eight</string>
-    <string name="nine_text">Nine</string>
-    <string name="default_string_display">0</string>
-
+    <string name="zero_text">0</string>
+    <string name="one_text">1</string>
+    <string name="two_text">2</string>
+    <string name="three_text">3</string>
+    <string name="four_text">4</string>
+    <string name="five_text">5</string>
+    <string name="six_text">6</string>
+    <string name="seven_text">7</string>
+    <string name="eight_text">8</string>
+    <string name="nine_text">9</string>
 </resources>

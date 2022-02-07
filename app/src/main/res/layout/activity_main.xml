@@ -31,36 +31,34 @@
             android:layout_height="match_parent"
             tools:context=".MainActivity">
 
-            <!--    <TextView-->
-            <!--        android:id="@+id/title_tv"-->
-            <!--        android:layout_width="wrap_content"-->
-            <!--        android:layout_height="wrap_content"-->
-            <!--        android:layout_marginTop="15dp"-->
-            <!--        android:text="@string/app_name"-->
-            <!--        android:textSize="28sp"-->
-            <!--        android:textStyle="bold"-->
-            <!--        app:layout_constraintEnd_toEndOf="parent"-->
-            <!--        app:layout_constraintHorizontal_bias="0.5"-->
-            <!--        app:layout_constraintStart_toStartOf="parent"-->
-            <!--        app:layout_constraintTop_toTopOf="parent" />-->
+            <TextView
+                android:id="@+id/store_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="15dp"
+                android:gravity="bottom|end"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/display_tv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
 
             <TextView
                 android:id="@+id/display_tv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="10dp"
-                android:layout_marginTop="15dp"
                 android:layout_marginBottom="10dp"
                 android:gravity="bottom|end"
                 android:padding="10dp"
-                android:text="@string/default_string_display"
+                android:text="@string/zero_text"
                 android:textSize="36sp"
                 app:layout_constraintBottom_toTopOf="@+id/imageView"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.157"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="1.0" />
+                app:layout_constraintStart_toStartOf="parent" />
 
             <ImageView
                 android:id="@+id/imageView"
