@@ -3,7 +3,7 @@
     <string name="ac_text">All Clear</string>
     <string name="root_text">Square Root</string>
     <string name="equals_text">Equals</string>
-    <string name="dot_text">Dot/Point</string>
+    <string name="dot_text">.</string>
     <string name="plus_text">Add</string>
     <string name="minus_text">Subtract</string>
     <string name="multiplication_text">Multiply</string>
@@ -20,4 +20,6 @@
     <string name="seven_text">7</string>
     <string name="eight_text">8</string>
     <string name="nine_text">9</string>
+    <string name="square_root_sign">√</string>
+    <string name="equal_sign">=</string>
 </resources>
