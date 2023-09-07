@@ -1,10 +1,11 @@
 package com.game.calculator;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.game.calculator.databinding.ActivityMainBinding;
 
@@ -15,8 +16,13 @@ public class MainActivity extends AppCompatActivity {
     private String storedTextString = "";
     private String displayTextString = "";
     private double currentDisplayNumber = 0;
-    private boolean dot = false;
+
+    private String firstOperand = "";
+    private String secondOperand = "";
     private double storedNumber = 0;
+    private boolean isSecondOperand = false;
+    // Variable to keep track of the running total
+    private double runningTotal = 0;
 
     // 0 - None, 1 - percent, 2 - Divide, 3 - multiply, 4 - subtract, 5 - add, 6 - root
     private int symbol = 0;
@@ -40,91 +46,135 @@ public class MainActivity extends AppCompatActivity {
         rootStr = getResources().getString(R.string.square_root_sign);
         equalStr = getResources().getString(R.string.equal_sign);
 
-        for (ImageButton i: inputButtons)
+        for (ImageButton i : inputButtons)
             i.setOnClickListener(listener);
 
-        binding.buttonAc.setOnClickListener(v -> reset());
+        binding.buttonRoot.setOnClickListener(v -> {
+            Log.d("Button Clicked", "Square Root");
+            symbol = 6;  // 7 represents the square root operation
+            performOperation();
+            displayTextString = "";
+            binding.displayTv.setText(String.valueOf(runningTotal));
+        });
 
         binding.buttonBack.setOnClickListener(view -> {
-            if (symbol == 0) {
-                if (displayTextString.length() > 1) {
-                    displayTextString = displayTextString.substring(0, displayTextString.length() - 1);
-                    binding.displayTv.setText(displayTextString);
-                    currentDisplayNumber = Double.parseDouble(displayTextString);
-                } else if (displayTextString.length() == 1) {
-                    displayTextString = "";
-                    binding.displayTv.setText(getResources().getString(R.string.zero_text));
-                    currentDisplayNumber = 0;
-                }
+            // Check if the string is not empty
+            if (!displayTextString.isEmpty()) {
+                // Remove the last character
+                displayTextString = displayTextString.substring(0, displayTextString.length() - 1);
+                // Update the display
+                binding.displayTv.setText(displayTextString);
             }
         });
 
         binding.buttonPercent.setOnClickListener(v -> {
+            Log.d("Button Clicked", "Percent");
             symbol = 1;
-            //remainder
+            firstOperand = displayTextString;
+            isSecondOperand = true;
+            displayTextString = "";
+            binding.displayTv.setText("%");
         });
 
         binding.buttonDivide.setOnClickListener(v -> {
+            Log.d("Button Clicked", "Divide");
+            performOperation();
             symbol = 2;
-            //divide
+            displayTextString = "";
+            binding.displayTv.setText("/");
         });
 
         binding.buttonMultiply.setOnClickListener(v -> {
+            Log.d("Button Clicked", "Multiply");
+            performOperation();
             symbol = 3;
-            //multiply
+            displayTextString = "";
+            binding.displayTv.setText("X");
         });
 
         binding.buttonSubtract.setOnClickListener(v -> {
+            Log.d("Button Clicked", "Minus");
+            performOperation();
             symbol = 4;
-            //subtract
+            displayTextString = "";
+            binding.displayTv.setText("-");
         });
 
         binding.buttonAdd.setOnClickListener(v -> {
+            Log.d("Button Clicked", "Plus");
+            performOperation();
             symbol = 5;
-            //add
+            displayTextString = "";
+            binding.displayTv.setText("+");
         });
 
-        binding.buttonRoot.setOnClickListener(v -> {
-            symbol = 6;
 
-            storedNumber = currentDisplayNumber;
-            storedTextString = rootStr + storedNumber;
-            binding.storeTv.setText(storedTextString);
-
-            currentDisplayNumber = Math.sqrt(storedNumber);
-            displayTextString = equalStr + currentDisplayNumber;
-            binding.displayTv.setText(displayTextString);
+        // Modify the equal button click listener
+        binding.buttonEqual.setOnClickListener(v -> {
+            Log.d("Button Clicked", "Equals");
+            performOperation();
+            binding.displayTv.setText(String.valueOf(runningTotal));
+            Log.d("Calculation", "Result: " + runningTotal);
+            displayTextString = String.valueOf(runningTotal);
+            symbol = 0;
         });
+
+        binding.buttonAc.setOnClickListener(v -> {
+            Log.d("Button Clicked", "AC");
+            displayTextString = "";
+            firstOperand = "";
+            isSecondOperand = false;
+            symbol = 0;
+            runningTotal = 0;  // Resetting the running total
+            binding.displayTv.setText("0");
+        });
+    }
+
+    // New function to perform the operation
+    private void performOperation() {
+        try {
+            double operand = Double.parseDouble(displayTextString);
+            switch (symbol) {
+                case 0:  // No operation set yet, initialize runningTotal
+                    runningTotal = operand;
+                    break;
+                case 1:
+                    runningTotal = (runningTotal / 100) * operand;
+                    break;
+                case 2:
+                    runningTotal /= operand;
+                    break;
+                case 3:
+                    runningTotal *= operand;
+                    break;
+                case 4:
+                    runningTotal -= operand;
+                    break;
+                case 5:
+                    runningTotal += operand;
+                    break;
+                case 6:
+                    runningTotal = Math.sqrt(operand);
+                    break;
+            }
+        } catch (Exception e) {
+            Log.d("Calculation", "Error: " + e.getMessage());
+        }
+        firstOperand = String.valueOf(runningTotal);
     }
 
     private View.OnClickListener listener = v -> {
-        if (symbol != 0)
-            reset();
+        if (isSecondOperand) {
+            displayTextString = "";
+            isSecondOperand = false;
+        }
 
         appendString(v.getContentDescription().toString());
+        Log.d("Button Clicked", v.getContentDescription().toString());
     };
 
     private void appendString(String str) {
-        if (str.equals("0")) {
-            if (currentDisplayNumber == 0)
-                return;
-        }
-
-        if (str.equals("."))
-            dot = true;
-
         displayTextString = displayTextString.concat(str);
         binding.displayTv.setText(displayTextString);
-        currentDisplayNumber = Double.parseDouble(displayTextString);
-    }
-
-    private void reset() {
-        displayTextString = "";
-        currentDisplayNumber = 0;
-        storedNumber = 0;
-        dot = false;
-        symbol = 0;
-        binding.displayTv.setText(getResources().getString(R.string.zero_text));
-        binding.storeTv.setText(null);
     }
 }
